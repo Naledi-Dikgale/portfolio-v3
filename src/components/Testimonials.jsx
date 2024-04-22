@@ -26,10 +26,12 @@ function Testimonials() {
   }, []);
 
   return (
-    <section className={`p-6 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
-      <h1 className={`text-4xl font-poppins ${theme === 'light' ? 'text-primary-light' : 'text-secondary-light'}`}>Testimonials</h1>
+    <section className={`p-6 flex flex-col items-center justify-center h-screen ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+      <h1 className={`font-agbalumo text-4xl text-center ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
+        Testimonials
+      </h1>
       {data.map((item, index) => (
-        <div key={index}>
+        <div key={index} className="text-center mt-4">
           <h2 className="font-agbalumo text-lg">{item.name}</h2>
           <p>{item.testimonial}</p>
         </div>
