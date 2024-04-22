@@ -5,8 +5,10 @@ function Features() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section className={`p-6 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
-      <h1 className={`text-4xl font-poppins ${theme === 'light' ? 'text-primary-light' : 'text-secondary-light'}`}>Featured Content</h1>
+    <section className={`p-6 flex flex-col items-center justify-center h-screen ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+      <h1 className={`font-agbalumo text-4xl text-center ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
+        Featured Content
+      </h1>
       {/*content */}
     </section>
   );
