@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={`w-screen min-h-screen flex flex-col justify-center items-center pt-24 md:pt-20 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`} style={{ backgroundImage: 'url(/book.png)' }}>
-      <h2 className={`text-3xl font-agbalumo font-bold mb-4 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>Contact</h2>
+      <h2 className={`text-3xl font-agbalumo font-bold mb-4 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Contact</h2>
       <div className="flex flex-col md:flex-row justify-between w-full max-w-screen-lg mx-auto bg-white bg-opacity-50 p-4 rounded-lg">
         <div className="flex flex-col space-y-4">
           <a href="https://instagram.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
