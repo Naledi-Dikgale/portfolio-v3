@@ -8,6 +8,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeContext } from './ThemeContext';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -23,6 +24,7 @@ function App() {
         <FAQ />
         <Contact />
         <Footer />
+        <ScrollToTop />
       </div>
     </ThemeContext.Provider>
   );
