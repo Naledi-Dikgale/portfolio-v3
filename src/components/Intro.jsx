@@ -9,7 +9,7 @@ function Intro() {
       <h1 className={`font-agbalumo text-4xl text-center ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         Hello, I'm Naledi
       </h1>
-      <p className={`mt-4 text-center ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
+      <p className={`mt-4 text-center font-agbalumo ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt.
       </p>
     </section>
