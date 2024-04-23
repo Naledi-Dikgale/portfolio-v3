@@ -10,30 +10,30 @@ const Contact = () => {
       <h2 className={`text-3xl font-agbalumo font-bold mb-4 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>Contact</h2>
       <div className="flex flex-col md:flex-row justify-between w-full max-w-screen-lg mx-auto bg-white bg-opacity-50 p-4 rounded-lg">
         <div className="flex flex-col space-y-4">
-          <a href="https://instagram.com" className="flex items-center space-x-2 hover:text-button">
+          <a href="https://instagram.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaInstagram size={24} />
             <span>Instagram</span>
           </a>
-          <a href="https://linkedin.com" className="flex items-center space-x-2 hover:text-button">
+          <a href="https://linkedin.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaLinkedin size={24} />
             <span>LinkedIn</span>
           </a>
-          <a href="https://facebook.com" className="flex items-center space-x-2 hover:text-button">
+          <a href="https://facebook.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaFacebook size={24} />
             <span>Facebook</span>
           </a>
         </div>
 
         <div className="flex flex-col space-y-4">
-          <div className="flex items-center space-x-2 hover:text-button">
+          <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaEnvelope size={24} />
             <p>Email: email@audioWise.co.za</p>
           </div>
-          <div className="flex items-center space-x-2 hover:text-button">
+          <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaPhone size={24} />
             <p>Phone: 123-456-7890</p>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 font-agbalumo">
             <FaMapPin size={24} className="text-red-700" />
             <p className="hover:text-button">
               Address: 123 Naledi Street
