@@ -38,22 +38,22 @@ function Footer() {
 
       {/* Social Media Links */}
       <div className="flex justify-center space-x-4 my-4 md:flex-row md:items-center md:justify-between">
-        <hr className="hidden md:block border-t border-amber-200 w-1/4 md:mx-2" />
+        <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
         <div className="flex space-x-4">
-          <a href="https://instagram.com" className="text-amber-200 hover:text-amber-300">
+          <a href="https://instagram.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaInstagram size={24} />
           </a>
-          <a href="https://linkedin.com" className="text-amber-200 hover:text-amber-300">
+          <a href="https://linkedin.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaLinkedin size={24} />
           </a>
-          <a href="https://facebook.com" className="text-amber-200 hover:text-amber-300">
+          <a href="https://facebook.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaFacebook size={24} />
           </a>
         </div>
-        <hr className="hidden md:block border-t border-amber-200 w-1/4 md:mx-2" />
+        <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
       </div>
 
-      <hr className="border-t border-amber-200 mb-4 md:hidden" />
+      <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} />
     </footer>
   );
 }
