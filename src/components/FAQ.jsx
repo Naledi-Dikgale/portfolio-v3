@@ -13,11 +13,11 @@ function FAQ() {
   };
 
   return (
-    <div id="questions" className={`h-screen max-w-xl mx-auto pb-8 pt-24 ${theme === 'light' ? 'text-secondary' : ' text-primary'}`}>
-      <h1 className={`font-agbalumo text-3xl font-bold mb-4  underline-double ${theme === 'light' ? 'underline-primary text-secondary' : 'underline-secondary text-secondary'}`}>
+    <div id="questions" className={`h-screen mx-auto pb-8 pt-24 ${theme === 'light' ? 'text-secondary' : ' text-primary'}`}>
+      <h1 className={`font-agbalumo text-3xl font-bold mb-4 text-center underline-double ${theme === 'light' ? 'underline-primary text-secondary' : 'underline-secondary text-secondary'}`}>
         FAQ
       </h1>
-      <div className="w-full h-auto space-y-4">
+      <div className="w-full h-auto space-y-4 max-w-3xl mx-auto">
         {FAQ_DATA.map((faq, index) => (
           <div key={index}>
             <button
