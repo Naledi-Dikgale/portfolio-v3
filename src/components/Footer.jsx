@@ -11,22 +11,22 @@ function Footer() {
       <div className="container mx-auto flex flex-wrap justify-center">
         {/*name and logo */}
         <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0">
-          <h3 className="text-lg font-bold">Naledi</h3>
+          <h3 className="text-lg font-agbalumo">Naledi</h3>
           <div className="diamond-shape relative w-12 h-12 transform rotate-45 overflow-hidden mx-auto">
             <img src="/logo.png" alt="Logo" className="absolute inset-0 w-full h-full object-cover transform -rotate-45" />
           </div>
         </div>
 
         {/* Contacts */}
-        <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0">
-          <h3 className="text-lg font-bold">Contacts</h3>
+        <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0 font-agbalumo">
+          <h3 className="text-lg ">Contacts</h3>
           <p className="mt-2">Email: email@naledi.co.za</p>
           <p>Phone: 123-456-7890</p>
           <p>Address: 123 Naledi Street, Cape Town, North, 9745, South Africa</p>
         </div>
 
         {/* Copyright */}
-        <div className="w-full md:w-1/4 text-center mt-4 md:mt-0">
+        <div className="w-full md:w-1/4 text-center mt-4 md:mt-0 font-agbalumo">
           <p>&copy; 2024 Naledi. All rights reserved.
           <br />Designed by <a href="https://naledi.netlify.app" className="text-amber-300 font-bold hover:bg-amber-200 hover:text-cyan-950">Naledi Dikgale</a>
           </p>
