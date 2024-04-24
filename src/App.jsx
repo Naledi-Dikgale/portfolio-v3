@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
-import Features from './components/Features';
+// import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import FAQ from './components/FAQ';
@@ -18,7 +18,7 @@ function App() {
       <div className={`App ${theme}`}>
         <Navbar />
         <Intro />
-        <Features />
+        {/* <Features /> */}
         <Testimonials />
         <About />
         <FAQ />
