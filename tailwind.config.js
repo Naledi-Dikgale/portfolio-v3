@@ -19,6 +19,9 @@ export default {
         lobster: ["Lobster Two", "sans-serif"],
         texturina: ["Texturina", "serif"]
       },
+      skew: {
+        '45': '45deg',
+      },
     },
       screens: {
     xs: "480px",
