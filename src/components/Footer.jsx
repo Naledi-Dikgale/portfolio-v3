@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { ThemeContext } from '../ThemeContext';
+import { RiMediumFill } from "react-icons/ri";
 
 function Footer() {
   const { theme } = useContext(ThemeContext);
@@ -22,13 +23,13 @@ function Footer() {
           <h3 className="text-lg ">Contacts</h3>
           <p className="mt-2">Email: email@naledi.co.za</p>
           <p>Phone: 123-456-7890</p>
-          <p>Address: 123 Naledi Street, Cape Town, North, 9745, South Africa</p>
+          <p>Location: Cape Town, South Africa</p>
         </div>
 
         {/* Copyright */}
         <div className="w-full md:w-1/4 text-center mt-4 md:mt-0 font-agbalumo">
           <p>&copy; 2024 Naledi. All rights reserved.
-          <br />Designed by <a href="https://naledi.netlify.app" className="text-amber-300 font-bold hover:bg-amber-200 hover:text-cyan-950">Naledi Dikgale</a>
+          <br />Designed by <a href="https://naledi.netlify.app" className="text-button font-bold hover:text-amber-200">Naledi Dikgale</a>
           </p>
           <div className="mt-2">
           </div>
@@ -41,13 +42,13 @@ function Footer() {
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
         <div className="flex space-x-4">
           <a href="https://instagram.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
-            <FaInstagram size={24} />
+            <FaGithub size={24} />
           </a>
           <a href="https://linkedin.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaLinkedin size={24} />
           </a>
           <a href="https://facebook.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
-            <FaFacebook size={24} />
+            <RiMediumFill size={24} />
           </a>
         </div>
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
