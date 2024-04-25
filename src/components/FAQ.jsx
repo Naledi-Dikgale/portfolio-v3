@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import FAQ_DATA from '../constants';
 import { ThemeContext } from '../ThemeContext';
+import { RiQuestionAnswerFill } from "react-icons/ri";
 
 function FAQ() {
   const { theme } = useContext(ThemeContext);
@@ -13,7 +14,7 @@ function FAQ() {
   };
 
   return (
-    <div id="questions" className={`bg-red-500 h-screen pb-8 pt-8 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+    <div id="questions" className={` h-screen pb-8 pt-8 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
       <h1 className={`font-agbalumo text-3xl font-bold mb-4 text-center underline-double ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         FAQ
       </h1>
@@ -33,6 +34,11 @@ function FAQ() {
               </div>
             )}
           </div>
+        ))}
+      </div>
+      <div className={`flex justify-center mt-4 ${theme === 'light' ? 'text-button' : 'text-button'}`}>
+        {[...Array(3)].map((_, i) => (
+          <RiQuestionAnswerFill key={i} className="text-4xl mx-2" />
         ))}
       </div>
     </div>
