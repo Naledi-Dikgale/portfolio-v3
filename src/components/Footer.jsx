@@ -41,13 +41,13 @@ function Footer() {
       <div className="flex justify-center space-x-4 my-4 md:flex-row md:items-center md:justify-between">
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
         <div className="flex space-x-4">
-          <a href="https://instagram.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
+          <a href="https://github.com/Naledi-Dikgale" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
+          <a href="https://www.linkedin.com/in/naledi-dikgale/" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <FaLinkedin size={24} />
           </a>
-          <a href="https://facebook.com" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
+          <a href="https://medium.com/@naledi1" className={`${theme === 'light' ? 'text-primary' : 'text-secondary'} hover:text-button`}>
             <RiMediumFill size={24} />
           </a>
         </div>
