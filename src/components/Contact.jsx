@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaLinkedin, FaFacebook, FaEnvelope, FaPhone, FaMapPin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaPhone, FaMapPin, FaGithub } from 'react-icons/fa';
 import { RiMediumFill } from "react-icons/ri";
 import { ThemeContext } from '../ThemeContext';
 
@@ -7,11 +7,11 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="contact" className={`w-screen min-h-screen flex flex-col justify-center items-center pt-24 md:pt-20 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`} style={{ backgroundImage: 'url(/book.png)' }}>
-      <h2 className={`text-3xl font-agbalumo font-bold mt-1 mb-6 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Contact Me!</h2>
-      <div className="flex flex-col md:flex-row justify-between w-full max-w-screen-lg mx-auto px-8 md:px-16">
+    <div id="contact" className={`w-screen h-full mt-28 mb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`} style={{ backgroundImage: 'url(/book.png)' }}>
+      <h2 className={`text-3xl font-agbalumo font-bold mt-1 mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Say Hello!</h2>
+      <div className="flex flex-col md:flex-row justify-between w-8/12 max-w-screen-lg mx-auto px-8 md:px-16">
         <div className="flex flex-col space-y-4">
-          <a href="https://github.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
+          <a href="https://github.com/Naledi-Dikgale" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaGithub size={24} />
             <span>Github</span>
           </a>
@@ -19,7 +19,7 @@ const Contact = () => {
             <FaLinkedin size={24} />
             <span>LinkedIn</span>
           </a>
-          <a href="https://medium.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
+          <a href="https://medium.com/@naledi1" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <RiMediumFill size={24} />
             <span>Medium</span>
           </a>
