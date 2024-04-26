@@ -52,7 +52,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <section className={`p-3 flex flex-col items-center justify-center h-screen ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+    <section className={`p-3 flex flex-col items-center justify-center h-full ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
   <div className="flex flex-col flex-grow items-center justify-between">
     <div>
       <h1 className={`font-agbalumo font-bold text-4xl text-center mb-8 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
