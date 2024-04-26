@@ -14,7 +14,7 @@ function FAQ() {
   };
 
   return (
-    <div id="questions" className={` h-screen pb-8 pt-8 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+    <div id="questions" className={` h-full mb-16 mt-28 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
       <h1 className={`font-agbalumo text-3xl font-bold mb-4 text-center underline-double ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         FAQ
       </h1>
