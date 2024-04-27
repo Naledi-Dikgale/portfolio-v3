@@ -35,13 +35,14 @@ function Navbar() {
             onChange={toggleTheme} 
             checked={theme === 'dark'} 
             offColor="#ec4899" 
-            onColor="#9ca3af" 
-            checkedIcon={<BsLightbulb color="#fff" />} 
+            onColor="#fff" 
+            checkedIcon={<BsLightbulb color="#1e293b" />} 
             uncheckedIcon={<BsLightbulbOff color="#fff" />} 
             height={20} 
             width={48} 
             handleDiameter={24} 
-            handleColor={theme === 'dark' ? '#fde047' : '#fde047'}
+            offHandleColor="#1e293b"
+            onHandleColor="#ec4899"
           />
           <FaBars className={`md:hidden ${theme === 'light' ? 'text-primary-dark' : 'text-secondary-light'}`} onClick={toggleModal} />
         </div>
