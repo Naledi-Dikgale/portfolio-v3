@@ -52,7 +52,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <section className={`p-3 flex flex-col items-center justify-center h-screen ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
+    <section className={`p-3 flex flex-col items-center justify-center h-full ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
   <div className="flex flex-col flex-grow items-center justify-between">
     <div>
       <h1 className={`font-agbalumo font-bold text-4xl text-center mb-8 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
@@ -60,7 +60,7 @@ function Testimonials() {
       </h1>
       {data.map((item, index) => (
         <span key={index} className="text-center mt-4">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center pb-4">
             <img src={item.icon} alt={item.name} className="w-12 h-12 rounded-full mx-auto"/>
             <h2 className="font-agbalumo text-xl">{item.name}</h2>
           </div>
@@ -68,7 +68,7 @@ function Testimonials() {
         </span>
       ))}
     </div>
-    <div className={`flex ${isSmallScreen ? 'justify-center' : 'justify-end'} mb-4 mr-4`}>
+    <div className={`flex ${isSmallScreen ? 'justify-center' : 'justify-end'} mb-4 pt-8 mr-4`}>
       <FaThumbsUp className={`text-2xl ${theme === 'light' ? 'text-button' : 'text-button'}`} />
       {[...Array(5)].map((_, i) => (
         <FaStar key={i} className={`text-2xl ml-2 ${theme === 'light' ? 'text-button' : 'text-button'}`} />
