@@ -7,14 +7,14 @@ function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <footer className={`relative p-4 mt-16 md:mt-0 ${theme === 'light' ? 'bg-secondary text-primary' : 'bg-primary text-secondary'} rounded-tl-3xl`}>
+    <footer className={`relative p-4 pt-16 md:mt-0 ${theme === 'light' ? 'bg-secondary text-primary' : 'bg-primary text-secondary'} rounded-tl-3xl`}>
       <div className={`absolute top-0 right-0 w-16 h-16 ${theme === 'light' ? 'bg-secondary' : 'bg-primary'} rounded-full`}></div>
       <div className="container mx-auto flex flex-wrap justify-center">
         {/*name and logo */}
         <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0">
           <h3 className="text-lg font-agbalumo">Naledi</h3>
-          <div className="diamond-shape relative w-12 h-12 transform rotate-45 overflow-hidden mx-auto">
-            <img src="/logo.png" alt="Logo" className="absolute inset-0 w-full h-full object-cover transform -rotate-45" />
+          <div className="diamond-shape relative w-12 h-12  overflow-hidden mx-auto">
+            <img src="/logo.png" alt="Logo" className="absolute inset-0 w-full h-full object-cover " />
           </div>
         </div>
 
@@ -35,7 +35,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <hr className="border-t border-amber-200 mt-4 md:hidden" />
+      <hr className="border-t border-secondary-light mt-4 md:hidden" />
 
       {/* Social Media Links */}
       <div className="flex justify-center space-x-4 my-4 md:flex-row md:items-center md:justify-between">
