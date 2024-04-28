@@ -21,15 +21,15 @@ function Footer() {
         {/* Contacts */}
         <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0 font-agbalumo">
           <h3 className="text-lg ">Contacts</h3>
-          <p className="mt-2">Email: email@naledi.co.za</p>
-          <p>Phone: 123-456-7890</p>
+          <p className="mt-2">Email: nalediaccc@mail.com</p>
+          {/* <p>Phone: 123-456-7890</p> */}
           <p>Location: Cape Town, South Africa</p>
         </div>
 
         {/* Copyright */}
         <div className="w-full md:w-1/4 text-center mt-4 md:mt-0 font-agbalumo">
           <p>&copy; 2024 Naledi. All rights reserved.
-          <br />Designed by <a href="https://naledi.netlify.app" className="text-button font-bold hover:text-amber-200">Naledi Dikgale</a>
+          <br />Designed by <a href="https://naledi.netlify.app" className="text-button font-bold hover:text-secondary-light">Naledi Dikgale</a>
           </p>
           <div className="mt-2">
           </div>

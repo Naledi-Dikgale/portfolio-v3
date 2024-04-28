@@ -52,9 +52,9 @@ function Navbar() {
           <div className="bg-white rounded-lg p-6 w-full h-full flex flex-col justify-center items-center">
             <FaTimes className="text-4xl font-bold" onClick={toggleModal} />
             <div className="flex flex-col space-y-4 mt-4 font-agbalumo font-bold text-3xl p-4">
-              <a href="/" className="text-button border-2 border-black p-2">Home</a>
-              <a href="#about" className="text-button border-2 border-black p-2">About</a>
-              <a href="#contact" className="text-button border-2 border-black p-2">Contact</a>
+              <a href="/" className="text-button border-2 border-black p-2" onClick={toggleModal}>Home</a>
+              <a href="#about" className="text-button border-2 border-black p-2" onClick={toggleModal}>About</a>
+              <a href="#contact" className="text-button border-2 border-black p-2" onClick={toggleModal}>Contact</a>
             </div>
           </div>
         </div>

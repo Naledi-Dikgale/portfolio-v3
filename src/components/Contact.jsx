@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaLinkedin, FaEnvelope, FaPhone, FaMapPin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaMapPin, FaGithub } from 'react-icons/fa';
 import { RiMediumFill } from "react-icons/ri";
 import { ThemeContext } from '../ThemeContext';
 
@@ -28,16 +28,16 @@ const Contact = () => {
         <div className="flex flex-col space-y-4">
           <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaEnvelope size={24} />
-            <p>Email: email@naledi.co.za</p>
+            <p>nalediaccc@gmail.com</p>
           </div>
-          <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
+          {/* <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaPhone size={24} />
             <p>Phone: 123-456-7890</p>
-          </div>
-          <div className="flex items-center space-x-2 font-agbalumo">
-            <FaMapPin size={24} className="text-red-700" />
+          </div> */}
+          <div className="flex items-center space-x-2 hover:text-button font-agbalumo">
+            <FaMapPin size={24} />
             <p className="hover:text-button">
-              Location: Cape Town, South Africa
+              Cape Town, South Africa
             </p>
           </div>
         </div>

@@ -12,7 +12,7 @@ function About() {
         About Me
       </h1>
       <div className="w-full h-auto space-y-4 max-w-3xl mx-auto">
-        <p className="text-xl font-agbalumo pl-4 sm:pl-0">
+      <p className={`text-center font-agbalumo font-bold text-xl mb-4 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
             I love to design and code things from scratch.
             I can help you build a product, feature or website.
             Look through some of my work and experience!
