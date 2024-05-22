@@ -21,10 +21,12 @@ function Intro() {
           </p>
           <a href="https://naledi.netlify.app" className={`px-4 py-2 border-2 rounded ${theme === 'light' ? 'border-secondary bg-button text-primary hover:bg-button hover:text-primary-light' : 'border-primary bg-button text-primary hover:bg-secondary-light hover:text-primary'}`}>Hire Me</a>
         </div>
-        <div className="flex flex-col items-center justify-center relative hidden md:block">
-          <img src="profile1.png" alt="Profile" className="mb-6 w-full max-w-xs" />
-          <div className={`absolute bottom-0 w-full h-3/4 ${theme === 'light' ? 'bg-primary' : 'bg-secondary'} transform skew-y-45 translate-y-48`}></div>
-        </div>
+         <div className="flex flex-col items-center justify-center relative hidden md:block rounded-full border-1 overflow-hidden transform scale-50">
+          <div className="flex items-center justify-center">
+            <img src="prof.png" alt="Profile" className="mt-12 w-full h-full " />
+          </div>
+            <div className={`w-full ${theme === 'light' ? 'bg-primary' : 'bg-secondary'}`}></div>
+          </div>
       </div>
     </section>
   );
