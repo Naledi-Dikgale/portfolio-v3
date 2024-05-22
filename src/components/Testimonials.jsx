@@ -8,18 +8,19 @@ import TestimonialSlider from './TestimonialSlider';
 // Mock data
 const mockData = [
   {
-    name: 'John Doe',
-    testimonial: 'Great work!',
-    icon: 'test(3).png',
-    date: '2022-03-01',
-    country: 'USA'
+    name: "Zuwaira Sadiq",
+    testimonial: "I wholeheartedly recommend Naledi Dikgale, an exceptional mentor and software engineer. Her profound expertise and passion have greatly advanced my full-stack development skills. Naledi's ability to demystify complex concepts and her mastery of technologies like JavaScript and React have significantly impacted my professional growth. Her exceptional ability to foster team collaboration and her dedication to excellence were evident when we worked on projects together. She creates an inclusive environment that nurtures innovation and ensures every team member feels valued. As a mentor, Naledi's genuine commitment to nurturing others' potential has not only enhanced my development but also cultivated a vibrant learning community. Her technical expertise, coupled with her mentorship and collaborative skills, makes her an invaluable asset to any team."
+    ,
+    icon: 'test.png',
+    date: "2024-03-15",
+    country: "Nigeria"
   },
   {
-    name: 'Jane Doe',
-    testimonial: 'Profound expertise and passion!',
-    icon: 'test(1).png',
-    date: '2022-02-15',
-    country: 'Canada'
+    name: 'Kaleb Bekele',
+    testimonial: "Naledi is a standout JavaScript developer who consistently impressed me with her skills and dedication. Throughout our project, she demonstrated a deep understanding of JavaScript's intricacies and an innate ability to solve complex problems efficiently. What truly set Naledi apart was her collaborative spirit and excellent teamwork. She was always ready to brainstorm ideas, provide valuable insights, and offer a helping hand when needed. Her ability to communicate clearly and work seamlessly within our team significantly contributed to our project's success.",
+    icon: 'testa.png',
+    date: '2023-09-25',
+    country: 'Ethiopia'
   },
   {
     name: 'Alice Smith',
