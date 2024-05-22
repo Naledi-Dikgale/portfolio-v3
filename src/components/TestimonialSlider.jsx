@@ -8,11 +8,13 @@ const TestimonialSlider = ({ testimonials }) => {
 
   const getCardCount = () => {
   const width = window.innerWidth;
-  if (width > 1200) {
-    return 3;
-  } else if (width > 900) {
-    return 2;
-  } else {
+  // if 
+  // (width > 1200) {
+  //   return 3;
+  // } else
+   if (width > 900) {
+  //   return 2;
+  // } else {
     return 1;
   }
 };
@@ -50,7 +52,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
   if (!testimonials || testimonials.length === 0) return null;
 
   return (
-    <div className="pt-8 pb-8 w-full flex flex-col items-center">
+    <div className="pt-8 pb-8 w-[90%] flex flex-col items-center" style={{ width: '50vw' }}>
       <div className="flex justify-between items-center w-full">
         <TbArrowBigLeftLines
           className={`text-${theme}-text-2 cursor-pointer`}
