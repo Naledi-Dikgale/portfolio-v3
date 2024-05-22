@@ -7,7 +7,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="contact" className={`w-screen h-full pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`} style={{ backgroundImage: 'url(/book.png)' }}>
+    <div id="contact" className={`w-screen h-full pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`} style={{ backgroundImage: 'url(/.png)' }}>
       <h2 className={`text-3xl font-agbalumo font-bold mt-1 mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Say Hello!</h2>
       <div className="flex flex-col md:flex-row justify-between w-8/12 max-w-screen-lg mx-auto px-8 md:px-16">
         <div className="flex flex-col space-y-4">
