@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { RiMediumFill } from "react-icons/ri";
 import { ThemeContext } from '../ThemeContext';
-
+import { motion } from "framer-motion";
 function About() {
   const { theme } = useContext(ThemeContext);
 
@@ -31,8 +31,20 @@ function About() {
           </a>
         </div>
         <div className="flex justify-center space-x-4">
-          <a href="https://docs.google.com/document/d/1wR3kXk9uqbYAIzUEHH7A88pr0xJ_-VsMspL9PcTyViE/edit?usp=sharing" className={`px-4 py-2 border-2 rounded ${theme === 'light' ? 'border-secondary bg-button text-primary hover:bg-button hover:text-primary-light' : 'border-primary bg-button text-primary hover:bg-secondary-light hover:text-primary'}`}>Resume</a>
-          <a href="https://naledi.netlify.app" className={`px-4 py-2 border-2 rounded ${theme === 'light' ? 'border-secondary bg-button text-primary hover:bg-button hover:text-primary-light' : 'border-primary bg-button text-primary hover:bg-secondary-light hover:text-primary'}`}>Portfolio</a>
+          <motion.a href="https://docs.google.com/document/d/1wR3kXk9uqbYAIzUEHH7A88pr0xJ_-VsMspL9PcTyViE/edit?usp=sharing" className={`px-4 py-2 border-2 rounded ${theme === 'light' ? 'bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800 text-primary hover:bg-secondary-light hover:text-primary font-bold text-center text-lg' : 'bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800 text-primary hover:bg-secondary-light hover:text-primary font-bold text-center text-lg'}`}
+          whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255, 182, 193)" }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          >
+            Resume
+          </motion.a>
+          <motion.a href="https://naledi.netlify.app" className={`px-4 py-2 border-2 rounded ${theme === 'light' ? 'bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800 text-primary hover:bg-secondary-light hover:text-primary font-bold text-center text-lg' : 'bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800 text-primary hover:bg-secondary-light hover:text-primary font-bold text-center text-lg'}`}
+          whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255, 182, 193)" }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          >
+            Portfolio
+          </motion.a>
         </div>
       </div>
     </section>
