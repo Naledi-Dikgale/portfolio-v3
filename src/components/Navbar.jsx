@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../ThemeContext';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Switch from "react-switch";
-import { BsLightbulb, BsLightbulbOff } from 'react-icons/bs';
+// import { BsLightbulb, BsLightbulbOff } from 'react-icons/bs';
 
 function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -36,8 +36,8 @@ function Navbar() {
             checked={theme === 'dark'} 
             offColor="#ec4899" 
             onColor="#fff" 
-            checkedIcon={<BsLightbulb color="#1e293b" />} 
-            uncheckedIcon={<BsLightbulbOff color="#fff" />} 
+            // checkedIcon={<BsLightbulb color="#1e293b" />} 
+            // uncheckedIcon={<BsLightbulbOff color="#fff" />} 
             height={20} 
             width={48} 
             handleDiameter={24} 
