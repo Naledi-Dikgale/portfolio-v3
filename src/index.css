@@ -23,3 +23,12 @@ body {
   scroll-behavior: smooth;
 overflow-x: hidden;
 }
+
+/* .App {
+  background: 
+    linear-gradient(30deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2),
+    linear-gradient(150deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2),
+    linear-gradient(90deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2);
+  background-size: 80px 140px;
+  background-color: #f0f0f0;
+} */
