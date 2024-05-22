@@ -18,7 +18,8 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100vw;
   height: auto;
   scroll-behavior: smooth;
+overflow-x: hidden;
 }
