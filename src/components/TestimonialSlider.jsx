@@ -60,14 +60,14 @@ const [currentIndex, setCurrentIndex] = useState(0);
         />
         <div className="flex flex-wrap justify-center items-center w-full">
           {current.map((index, i) => {
-            const { icon: img, name, country, date, testimonial: description } = testimonials[index];
+            const { icon: img, name, job, country, testimonial: description } = testimonials[index];
             return (
               <TestimonialCard
                 key={i}
                 img={img}
                 name={name}
+                job={job}
                 country={country}
-                date={date}
                 description={description}
                 theme={theme}
               />

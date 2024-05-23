@@ -12,42 +12,42 @@ const mockData = [
     testimonial: "I wholeheartedly recommend Naledi Dikgale, an exceptional mentor and software engineer. Her profound expertise and passion have greatly advanced my full-stack development skills. Naledi's ability to demystify complex concepts and her mastery of technologies like JavaScript and React have significantly impacted my professional growth. Her exceptional ability to foster team collaboration and her dedication to excellence were evident when we worked on projects together. She creates an inclusive environment that nurtures innovation and ensures every team member feels valued. As a mentor, Naledi's genuine commitment to nurturing others' potential has not only enhanced my development but also cultivated a vibrant learning community. Her technical expertise, coupled with her mentorship and collaborative skills, makes her an invaluable asset to any team."
     ,
     icon: 'test.png',
-    date: "2024-03-15",
+    job: "Full-Stack Developer",
     country: "Nigeria"
   },
   {
     name: 'Kaleb Bekele',
     testimonial: "Naledi is a standout JavaScript developer who consistently impressed me with her skills and dedication. Throughout our project, she demonstrated a deep understanding of JavaScript's intricacies and an innate ability to solve complex problems efficiently. What truly set Naledi apart was her collaborative spirit and excellent teamwork. She was always ready to brainstorm ideas, provide valuable insights, and offer a helping hand when needed. Her ability to communicate clearly and work seamlessly within our team significantly contributed to our project's success.",
     icon: 'testa.png',
-    date: '2023-09-25',
+    job: "Full-Stack Developer",
     country: 'Ethiopia'
   },
   {
     name: 'Alice Smith',
     testimonial: 'Fantastic service!',
     icon: 'test(2).png',
-    date: '2022-01-20',
+    job: "Full-Stack Developer",
     country: 'UK'
   },
   {
     name: 'Bob Johnson',
     testimonial: 'Loved the final product!',
     icon: 'test(4).png',
-    date: '2022-03-05',
+    job: "Full-Stack Developer",
     country: 'Australia'
   },
   {
     name: 'Charlie Brown',
     testimonial: 'Very professional!',
     icon: 'test(2).png',
-    date: '2022-02-28',
+    job: "Full-Stack Developer",
     country: 'Germany'
   },
   {
     name: 'David Williams',
     testimonial: 'Highly recommend!',
     icon: 'test(2).png',
-    date: '2022-02-10',
+    job: "Full-Stack Developer",
     country: 'France'
   }
 ];
