@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         primary: '#fafafa',
-        secondary: '#0f172a',
+        secondary: '#475569',
         'primary-light': '#fde68a',
         'secondary-light': '#6b7280',
         'button': '#db2777',
@@ -17,7 +17,8 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         agbalumo: ["Aoboshi One", "serif"],
         lobster: ["Lobster Two", "sans-serif"],
-        texturina: ["Texturina", "serif"]
+        texturina: ["Texturina", "serif"],
+        andika: ["Andika", "sans-serif"],
       },
       // skew: {
       //   '45': '45deg',
