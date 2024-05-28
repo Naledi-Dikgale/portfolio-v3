@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`p-6 fixed w-full top-0 z-50 border-b-2 ${theme === 'light' ? 'bg-primary' : 'bg-secondary'}`}>
+    <nav className={`p-6 fixed w-full top-0 z-50 border-b-1 ${theme === 'light' ? 'bg-primary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900'}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <span className="font-agbalumo text-2xl">
