@@ -9,7 +9,7 @@ import TestimonialSlider from './TestimonialSlider';
 const mockData = [
   {
     name: "Zuwaira Sadiq",
-    testimonial: "I wholeheartedly recommend Naledi Dikgale, an exceptional mentor and software engineer. Her profound expertise and passion have greatly advanced my full-stack development skills. Naledi's ability to demystify complex concepts and her mastery of technologies like JavaScript and React have significantly impacted my professional growth. Her exceptional ability to foster team collaboration and her dedication to excellence were evident when we worked on projects together. She creates an inclusive environment that nurtures innovation and ensures every team member feels valued. As a mentor, Naledi's genuine commitment to nurturing others' potential has not only enhanced my development but also cultivated a vibrant learning community. Her technical expertise, coupled with her mentorship and collaborative skills, makes her an invaluable asset to any team."
+    testimonial: "I wholeheartedly recommend Naledi Dikgale, an exceptional mentor and software engineer. Her profound expertise and passion have greatly advanced my full-stack development skills. Naledi's ability to demystify complex concepts and her mastery of technologies like JavaScript and React have significantly impacted my professional growth. Her exceptional ability to foster team collaboration and her dedication to excellence were evident when we worked on projects together. She creates an inclusive environment that nurtures innovation and ensures every team member feels valued."
     ,
     icon: 'test.png',
     job: "Full-Stack Developer",
@@ -59,8 +59,8 @@ function Testimonials() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   return (
-    <section className={`p-3 flex flex-col items-center justify-center h-full ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-secondary text-primary'}`}>
-      <div className="flex flex-col flex-grow items-center justify-between">
+    <section className={`p-3 flex flex-col items-center justify-center h-full ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
+      <div className="flex flex-col items-center justify-between">
         <div>
           <h1 className={`font-agbalumo font-bold text-4xl text-center mb-8 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
             Testimonials
@@ -77,7 +77,7 @@ function Testimonials() {
 
       <TestimonialSlider testimonials={data} />
     </div>
-    <div className={`flex ${isSmallScreen ? 'justify-center' : 'justify-end'} mb-4 pt-8 mr-4`}>
+    <div className={`flex ${isSmallScreen ? 'justify-center' : 'justify-end'} mb-4 pt-8`}>
       <FaThumbsUp className={`text-2xl ${theme === 'light' ? 'text-button' : 'text-button'}`} />
       {[...Array(5)].map((_, i) => (
         <FaStar key={i} className={`text-2xl ml-2 ${theme === 'light' ? 'text-button' : 'text-button'}`} />
