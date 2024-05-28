@@ -23,7 +23,7 @@ function Navbar() {
           <span className="font-agbalumo text-2xl">
             <img src="/logo.png" alt="Logo" className="inline-block rounded-full p-1 h-12" />
           </span>
-          <span className={`font-lobster font-bold text-xl ${theme === 'light' ? 'text-primary-dark' : 'text-primary'}`}>NALEDI</span>
+          <span className={`font-andika font-bold text-xl ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Software Engineer</span>
         </div>
         <div className={`hidden md:flex space-x-4 font-agbalumo font-bold text-xl  ${theme === 'light' ? 'border-primary-light text-primary-dark' : 'border-secondary-light text-secondary-light'}`}>
           <a href="/" className="text-button">Home</a>
