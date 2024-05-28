@@ -1,8 +1,8 @@
 export const projects = [
   {
-    image: '/Capture (4).png',
-    title: 'Console Hub',
-    description: 'A gaming console rental app built with React, Rails, and Tailwind.',
+    image: '/audio.png',
+    title: 'Audio-Wise',
+    description: 'An audiologist business website built with React, Rails, and Tailwind.',
     sourceCodeLink: 'https://github.com/user/console-hub',
     liveLink: 'https://console-hub.com',
     techStack: ['FaReact', 'SiRails', 'SiTailwindcss']
