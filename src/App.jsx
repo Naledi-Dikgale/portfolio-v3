@@ -6,6 +6,7 @@ import About from './components/About';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 import { ThemeContext } from './ThemeContext';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -27,10 +28,10 @@ function App() {
       }}>
         <Navbar />
         <Intro />
-        {/* <Features /> */}
         <Testimonials />
         <About />
         <FAQ />
+        <Projects />
         <Contact />
         <Footer />
         <ScrollToTop />
