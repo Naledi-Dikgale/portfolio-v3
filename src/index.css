@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,11 +25,19 @@ body {
 overflow-x: hidden;
 }
 
-/* .App {
-  background: 
-    linear-gradient(30deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2),
-    linear-gradient(150deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2),
-    linear-gradient(90deg, #d2d2d2 12%, transparent 12.5%, transparent 87%, #d2d2d2 87.5%, #d2d2d2);
-  background-size: 80px 140px;
-  background-color: #f0f0f0;
-} */
+.diagonal-lines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 45px,
+    rgba(233, 230, 230, 0.2) 50px,
+    rgba(231, 229, 229, 0.2) 50px
+  );
+  background-size: 100% 100%;
+}
