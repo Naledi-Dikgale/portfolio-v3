@@ -11,7 +11,7 @@ export default {
         secondary: '#475569',
         'primary-light': '#fde68a',
         'secondary-light': '#6b7280',
-        'button': '#db2777',
+        'button': '#ec4899',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

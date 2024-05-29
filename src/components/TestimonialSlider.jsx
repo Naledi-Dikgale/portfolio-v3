@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import TestimonialCard from '../Cards/TestimonialCard';
-import { FaForwardFast, FaBackwardFast } from "react-icons/fa6";
+import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { ThemeContext } from '../ThemeContext';
 
 const TestimonialSlider = ({ testimonials }) => {
@@ -48,7 +48,7 @@ const TestimonialSlider = ({ testimonials }) => {
   <div className="pt-8 pb-8 flex flex-col justify-center items-center">
     <div className="flex justify-between items-center">
       <div style={{ flex: 1, display: 'flex', justifyContent: 'center', paddingLeft: '1em' }}>
-        <button className={currentIndex === 0 ? 'focus' : ''} onClick={handlePrev}><FaBackwardFast fill={theme === 'dark' ? '#dbeafe' : '#93c5fd'} size="2em" /></button>
+        <button className={currentIndex === 0 ? 'focus' : ''} onClick={handlePrev}><MdArrowBackIos fill={theme === 'dark' ? '#dbeafe' : '#94a3b8'} size="2em" /></button>
       </div>
       {current.map((index, i) => {
         const { icon: img, name, job, country, testimonial: description } = testimonials[index];
@@ -66,7 +66,7 @@ const TestimonialSlider = ({ testimonials }) => {
         );
       })}
       <div style={{ flex: 1, display: 'flex', justifyContent: 'center', paddingRight: '1em' }}>
-        <button className={currentIndex === testimonials.length - 1 ? 'focus' : ''} onClick={handleNext}><FaForwardFast fill={theme === 'dark' ? '#dbeafe' : '#93c5fd'} size="2em" /></button>
+        <button className={currentIndex === testimonials.length - 1 ? 'focus' : ''} onClick={handleNext}><MdArrowForwardIos fill={theme === 'dark' ? '#dbeafe' : '#94a3b8'} size="2em" /></button>
       </div>
     </div>
     <div className="pagination mt-4">
