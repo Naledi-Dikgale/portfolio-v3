@@ -20,9 +20,6 @@ export default {
         texturina: ["Texturina", "serif"],
         andika: ["Andika", "sans-serif"],
       },
-      // skew: {
-      //   '45': '45deg',
-      // },
       },
 
     },
@@ -34,6 +31,9 @@ export default {
     lg: "1200px",
     xl: "1700px",
   },
-  plugins: [],
-}
+  
+  variants: {
+  },
+    plugins: [],
+  }
 
