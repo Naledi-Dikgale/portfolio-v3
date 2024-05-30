@@ -41,3 +41,22 @@ overflow-x: hidden;
   );
   background-size: 100% 100%;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+}
+
+.dot.active {
+  background-color: #dbeafe;
+}
+
