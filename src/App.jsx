@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
+import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import FAQ from './components/FAQ';
@@ -15,19 +16,12 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={`App ${theme}`} style={{
-        backgroundImage: `url(/pattern.png)`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'repeat',
-        // backgroundBlendMode: 'soft-light',
-        backgroundPosition: 'center',
-        backgroundOrigin: 'border-box',
-        // backgroundPosition: 'center',
-        // backgroundPositionY: 'center',
-        zIndex: 9999
+      <div className={`App ${theme === 'light' ? 'bg-primary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900'}`} style={{
+       
       }}>
         <Navbar />
         <Intro />
+        <Skills />
         <Testimonials />
         <About />
         <FAQ />
