@@ -74,13 +74,13 @@ function Skills() {
           totalCount: '{{count}} contributions in the last year',
         }}
         customTheme={{
-          background: 'transparent', // Background color
-          text: '#000', // Text color
-          grade4: '#9d174d', // Color for highest level of contribution activity
-          grade3: '#be185d', // Color for 2nd highest level of contribution activity
-          grade2: '#ec4899', // Color for 3rd highest level of contribution activity
-          grade1: '#f472b6', // Color for 4th highest level of contribution activity
-          grade0: '#f9a8d4' // Color for no contribution activity
+          background: 'transparent',
+          text: '#000',
+          grade4: '#9d174d', //most
+          grade3: '#be185d',
+          grade2: '#ec4899',
+          grade1: '#f472b6',
+          grade0: '#f9a8d4' //least
         }}
       />
     </section>
