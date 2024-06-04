@@ -6,7 +6,7 @@ import { SiRuby, SiRubyonrails, SiRedux, SiTailwindcss, SiDaisyui, SiTypescript,
 
 const techStackIcons = {
   'React': <FaReact />,
-  // 'Ruby': <SiRuby />,
+  'Ruby': <SiRuby />,
   'Rails': <SiRubyonrails />,
   'Tailwind': <SiTailwindcss />,
   'Html': <FaHtml5 />,
