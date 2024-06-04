@@ -4,6 +4,7 @@ import { projects } from '../projects';
 import { FaReact } from 'react-icons/fa';
 import { SiRubyonrails } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
+import { FaHtml5, FaCss3 } from 'react-icons/fa';
 
 function getTechStackIcon(icon) {
   switch(icon) {
@@ -13,6 +14,10 @@ function getTechStackIcon(icon) {
       return <SiRubyonrails />;
     case 'SiTailwindcss':
       return <SiTailwindcss />;
+    case 'FaHtml5':
+      return <FaHtml5 />;
+    case 'FaCss3':
+      return <FaCss3 />;  
     default:
       return null;
   }
@@ -33,8 +38,8 @@ function Projects() {
             <h2 className="text-xl font-agbalumo font-bold text-center mt-2">{project.title}</h2>
             <p className="text-gray-700 mt-2 text-center px-8 font-andika">{project.description}</p>
             <div className="mt-4 text-center">
-              <a className="text-button hover:underline" href={project.sourceCodeLink}>Source Code</a>
-              <a className="ml-4 text-button hover:underline" href={project.liveLink}>Live Link</a>
+              <a className="text-button hover:underline mr-4" href={project.sourceCodeLink}>Code</a>
+              <a className="ml-4 text-button hover:underline" href={project.liveLink}>Live</a>
             </div>
             <div className="flex mt-4 items-center justify-center">
               {project.techStack.map((icon, i) => (
