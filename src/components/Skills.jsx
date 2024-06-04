@@ -17,7 +17,7 @@ const techStackIcons = {
   'TypeScript': <SiTypescript />,
   'MySQL': <SiMysql />,
   'Daisyui': <SiDaisyui />,
-  'Webpack': <SiWebpack/>,
+  'Webpack': <SiWebpack />,
   'Eslint': <SiEslint />,
   'Postman': <SiPostman />,
   'Postgresql': <SiPostgresql />,
@@ -48,6 +48,13 @@ function Skills() {
     'React', 'Ruby', 'Rails', 'Tailwind', 'Html', 'CSS', 'JavaScript', 'SASS', 'Redux', 'TypeScript', 'MySQL', 'Eslint', 'Postman', 'Postgresql', 'Git', 'Github'
   ];
 
+  const customTheme = {
+    background: 'transparent',
+    text: theme === 'light' ? '#000' : '#fff',
+    light: ['#fbcfe8', '#f472b6', '#db2777', '#9d174d', '#500724'],
+    dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
+  };
+
   return (
     <section className={`md:w-full h-auto p-6 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
       <h1 className={`font-agbalumo font-bold text-4xl text-center mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
@@ -55,11 +62,11 @@ function Skills() {
       </h1>
       <div className="md:w-[40%] h-auto grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center">
         {techStack.map((tech, index) => (
-          <div key={index} className={`w-20 h-20 flex flex-col items-center justify-center ${theme === 'light' ?'bg-gradient-to-r from-slate-100 to-slate-300' : 'bg-gradient-to-r from-slate-600 to-slate-900'} shadow-md rounded-lg p-4`}>
+          <div key={index} className={`w-20 h-20 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-gradient-to-r from-slate-100 to-slate-300' : 'bg-gradient-to-r from-slate-600 to-slate-900'} shadow-md rounded-lg p-4`}>
             <div className="flex items-center justify-center">
               {techStackIcons[tech]}
             </div>
-            <p className={`mt-2 text-center px-6 text-sm font-andika ${theme === 'light' ? 'text-gray-700' : 'text-primary'} `}>{tech}</p>
+            <p className={`mt-2 text-center px-6 text-sm font-andika ${theme === 'light' ? 'text-gray-700' : 'text-primary'}`}>{tech}</p>
           </div>
         ))}
       </div>
@@ -69,19 +76,11 @@ function Skills() {
       <GitHubCalendar 
         username="Naledi-Dikgale" 
         transformData={selectLastYear} 
-        hideColorLegend
+        colorScheme='light'
         labels={{
           totalCount: '{{count}} contributions in the last year',
         }}
-        customTheme={{
-          background: 'transparent',
-          text: '#000',
-          grade4: '#9d174d', //most
-          grade3: '#be185d',
-          grade2: '#ec4899',
-          grade1: '#f472b6',
-          grade0: '#f9a8d4' //least
-        }}
+        theme={customTheme}  // Apply custom theme
       />
     </section>
   );
