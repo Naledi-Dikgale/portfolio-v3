@@ -2,17 +2,17 @@ export const projects = [
   {
     image: '/audio.png',
     title: 'Audio-Wise',
-    description: 'An audiologist business website built with React, Rails, and Tailwind.',
+    description: 'An audiologist business website built with React and Tailwind.',
     sourceCodeLink: 'https://github.com/user/console-hub',
     liveLink: 'https://console-hub.com',
-    techStack: ['FaReact', 'SiRails', 'SiTailwindcss']
+    techStack: ['FaReact', 'SiTailwindcss']
   },
   {
-    image: '/Capture (4).png',
+    image: '/console.png',
     title: 'Console Hub',
     description: 'A gaming console rental app built with React, Rails, and Tailwind.',
-    sourceCodeLink: 'https://github.com/user/console-hub',
-    liveLink: 'https://console-hub.com',
+    sourceCodeLink: 'https://github.com/Naledi-Dikgale/gaming_console_reservation_front_end',
+    liveLink: 'https://console-hub.netlify.app',
     techStack: ['FaReact', 'SiRails', 'SiTailwindcss']
   },
   {
@@ -21,7 +21,7 @@ export const projects = [
     description: 'A YouTube clone with minimal functionality aimed at practicing HTML and CSS.',
     sourceCodeLink: 'https://github.com/Naledi-Dikgale/YouTube-dummy',
     liveLink: 'https://naledi-dikgale.github.io/YouTube-dummy/',
-    techStack: ['FaReact', 'SiRails', 'SiTailwindcss']
+    techStack: ['FaHtml5', 'FaCss3']
   },
   {
     image: '/Capture (4).png',
