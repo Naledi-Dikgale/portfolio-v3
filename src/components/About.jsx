@@ -38,7 +38,7 @@ function About() {
           </h4>
           <p className="text-center">
             Spend 1300+ hours mastering algorithms, data structures, and full-stack development while simultaneously developing projects with Ruby, Rails, JavaScript, React, and Redux.
-            Develop skills in remote pair programming using GitHub, industry-standard git-flow, and daily standups to communicate and collaborate with international remote developers. 
+            Developed skills in remote pair programming using GitHub, industry-standard git-flow, and daily standups to communicate and collaborate with international remote developers. 
           </p>
         </div>
         <div className="border-t-2 border-b-2 border-gray-300 py-4">
