@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { FaLinkedin, FaGithub, FaBriefcase } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { RiMediumFill } from "react-icons/ri";
 import { ThemeContext } from '../ThemeContext';
 import { motion } from "framer-motion";
