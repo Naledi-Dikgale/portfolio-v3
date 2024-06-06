@@ -54,7 +54,7 @@ function Footer() {
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
       </div>
 
-      <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} />
+      {/* <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} /> */}
     </footer>
   );
 }
