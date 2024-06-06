@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialCard = ({ img, name, job, country, description, theme }) => {
   return (
-    <div className="testimonial-card h-auto top-2 bg-transparent shadow-lg rounded-lg flex flex-col md:flex-row sm:w-[90%] justify-center items-center">
+    <div className="testimonial-card h-auto top-2 bg-transparent shadow-lg rounded-lg flex flex-col md:flex-row w-[90%] justify-center items-center">
       <div className=" md:w-1/4 flex flex-col justify-center items-center p-4">
         {img && typeof img === "string" ? (
           <img className="mr-3 rounded-full h-16 w-16" src={img} alt="img" />
