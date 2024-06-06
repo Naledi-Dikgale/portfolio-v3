@@ -60,7 +60,7 @@ function Skills() {
       <h1 className={`font-agbalumo font-bold text-4xl text-center mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         Tools and Technologies
       </h1>
-      <div className="md:w-[40%] h-auto grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-center">
+      <div className="md:w-[40%] h-auto grid grid-cols-3 md:grid-cols-4 gap-4 items-center justify-center">
         {techStack.map((tech, index) => (
           <div key={index} className={`w-20 h-20 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-gradient-to-r from-slate-100 to-slate-300' : 'bg-gradient-to-r from-slate-600 to-slate-900'} shadow-md rounded-lg p-4`}>
             <div className="flex items-center justify-center">
@@ -80,7 +80,7 @@ function Skills() {
         labels={{
           totalCount: '{{count}} contributions in the last year',
         }}
-        theme={customTheme}  // Apply custom theme
+        theme={customTheme}
       />
     </section>
   );
