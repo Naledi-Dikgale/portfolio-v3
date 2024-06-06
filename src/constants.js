@@ -13,7 +13,7 @@ const FAQ_DATA = [
   },
   {
    question: 'What do you enjoy doing in your free time?',
-   answer: 'Road trips are my go-to adventure; there is just something magical about the open road.Constantly seeking new destinations to add to my ever-growing travel bucket list!'
+   answer: 'Road trips are my go-to adventure; there is just something magical about the open road.Constantly seeking new destinations to add to my ever-growing travel bucket list! If I am not out discovering the world, you can find me at home with a good book or cartoon series, I LOVE CARTOONS.'
   }
 ];
 
