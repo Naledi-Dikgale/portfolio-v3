@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../ThemeContext';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Switch from "react-switch";
-import { BsLightbulb, BsLightbulbOff } from 'react-icons/bs';
+// import { BsLightbulb, BsLightbulbOff } from 'react-icons/bs';
 
 function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,13 +17,13 @@ function Navbar() {
   };
 
   return (
-    <nav className={`p-6 fixed w-full top-0 z-50 border-b-2 ${theme === 'light' ? 'bg-primary' : 'bg-secondary'}`}>
+    <nav className={`p-6 fixed w-full top-0 z-50 border-b-1 ${theme === 'light' ? 'bg-primary bg-opacity-90' : 'bg-slate-800 bg-opacity-90'}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <span className="font-agbalumo text-2xl">
             <img src="/logo.png" alt="Logo" className="inline-block rounded-full p-1 h-12" />
           </span>
-          <span className={`font-lobster font-bold text-xl ${theme === 'light' ? 'text-primary-dark' : 'text-primary'}`}>NALEDI</span>
+          <span className={`font-andika font-bold text-xl ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Software Engineer</span>
         </div>
         <div className={`hidden md:flex space-x-4 font-agbalumo font-bold text-xl  ${theme === 'light' ? 'border-primary-light text-primary-dark' : 'border-secondary-light text-secondary-light'}`}>
           <a href="/" className="text-button">Home</a>
@@ -36,8 +36,8 @@ function Navbar() {
             checked={theme === 'dark'} 
             offColor="#ec4899" 
             onColor="#fff" 
-            checkedIcon={<BsLightbulb color="#1e293b" />} 
-            uncheckedIcon={<BsLightbulbOff color="#fff" />} 
+            // checkedIcon={<BsLightbulb color="#1e293b" />} 
+            // uncheckedIcon={<BsLightbulbOff color="#fff" />} 
             height={20} 
             width={48} 
             handleDiameter={24} 

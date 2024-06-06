@@ -7,7 +7,7 @@ function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <footer className={`relative p-4 pt-16 md:mt-0 ${theme === 'light' ? 'bg-secondary text-primary' : 'bg-primary text-secondary'} rounded-tl-3xl`}>
+    <footer className={`relative p-4 pt-16 md:mt-0 rounded-tl-3xl ${theme === 'light' ? 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary' : 'bg-primary text-secondary'} `}>
       <div className={`absolute top-0 right-0 w-16 h-16 ${theme === 'light' ? 'bg-secondary' : 'bg-primary'} rounded-full`}></div>
       <div className="container mx-auto flex flex-wrap justify-center">
         {/*name and logo */}
@@ -54,7 +54,7 @@ function Footer() {
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
       </div>
 
-      <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} />
+      {/* <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} /> */}
     </footer>
   );
 }
