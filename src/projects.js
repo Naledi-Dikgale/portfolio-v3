@@ -24,11 +24,11 @@ export const projects = [
     techStack: ['FaHtml5', 'FaCss3']
   },
   {
-    image: '/Capture (4).png',
-    title: 'Console Hub',
-    description: 'A gaming console rental app built with React, Rails, and Tailwind.',
+    image: '/brain.png',
+    title: 'Brain-Cardio',
+    description: 'A fun (Brain workout) mobile game played in teams to boost knowledge and break the ice.',
     sourceCodeLink: 'https://github.com/user/console-hub',
     liveLink: 'https://console-hub.com',
-    techStack: ['FaReact', 'SiRails', 'SiTailwindcss']
+    techStack: ['FaReact', 'SiTailwindcss']
   },
 ];
