@@ -21,7 +21,7 @@ function Intro() {
               impression. Let&apos;s turn your vision into a digital masterpiece!
           </p>
             <motion.div className=""
-            whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255, 182, 193)" }}
+            whileHover={{ scale: 1.1}}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300 }}
             >
