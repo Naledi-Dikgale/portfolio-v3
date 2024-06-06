@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../ThemeContext';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Switch from "react-switch";
-// import { BsLightbulb, BsLightbulbOff } from 'react-icons/bs';
+import { motion } from "framer-motion";
 
 function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
@@ -26,9 +26,27 @@ function Navbar() {
           <span className={`font-andika font-bold text-xl ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>Software Engineer</span>
         </div>
         <div className={`hidden md:flex space-x-4 font-agbalumo font-bold text-xl  ${theme === 'light' ? 'border-primary-light text-primary-dark' : 'border-secondary-light text-secondary-light'}`}>
-          <a href="/" className="text-button">Home</a>
-          <a href="#about" className="text-button">About</a>
-          <a href="#contact" className="text-button">Contact</a>
+          <motion.a href="/" className="text-button"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          >
+          Home
+          </motion.a>
+          <motion.a href="#about" className="text-button"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          >
+            About
+            </motion.a>
+          <motion.a href="#contact" className="text-button"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          >
+            Contact
+            </motion.a>
         </div>
         <div className="flex items-center space-x-2">
           <Switch 
@@ -36,8 +54,6 @@ function Navbar() {
             checked={theme === 'dark'} 
             offColor="#ec4899" 
             onColor="#fff" 
-            // checkedIcon={<BsLightbulb color="#1e293b" />} 
-            // uncheckedIcon={<BsLightbulbOff color="#fff" />} 
             height={20} 
             width={48} 
             handleDiameter={24} 
@@ -52,9 +68,27 @@ function Navbar() {
           <div className="bg-white rounded-lg p-6 w-full h-full flex flex-col justify-center items-center">
             <FaTimes className="text-4xl font-bold" onClick={toggleModal} />
             <div className="flex flex-col space-y-4 mt-4 font-agbalumo font-bold text-3xl p-4">
-              <a href="/" className="text-button border-2 border-black p-2" onClick={toggleModal}>Home</a>
-              <a href="#about" className="text-button border-2 border-black p-2" onClick={toggleModal}>About</a>
-              <a href="#contact" className="text-button border-2 border-black p-2" onClick={toggleModal}>Contact</a>
+              <motion.a href="/" className="text-button border-2 border-black p-2" onClick={toggleModal}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              >
+                Home
+              </motion.a>
+              <motion.a href="#about" className="text-button border-2 border-black p-2" onClick={toggleModal}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              >
+                About
+              </motion.a>
+              <motion.a href="#contact" className="text-button border-2 border-black p-2" onClick={toggleModal}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              >
+                Contact
+              </motion.a>
             </div>
           </div>
         </div>
