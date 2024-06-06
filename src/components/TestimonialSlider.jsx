@@ -46,26 +46,28 @@ const TestimonialSlider = ({ testimonials }) => {
 
   return (
   <div className="pt-8 pb-8 flex flex-col justify-center items-center">
-    <div className="flex justify-between items-center">
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', paddingLeft: '1em' }}>
+    <div className="flex justify-between items-center w-full">
+      <div className="flex justify-start pl-2 md:pl-1">
         <button className={currentIndex === 0 ? 'focus' : ''} onClick={handlePrev}><MdArrowBackIos fill={theme === 'dark' ? '#dbeafe' : '#94a3b8'} size="2em" /></button>
       </div>
-      {current.map((index, i) => {
-        const { icon: img, name, job, country, testimonial: description } = testimonials[index];
-        return (
-          <div key={i} className={`testimonial-card ${index === currentIndex ? 'slide-in' : 'slide-out'}`} style={{ flex: 2 }}>
-            <TestimonialCard
-              img={img}
-              name={name}
-              job={job}
-              country={country}
-              description={description}
-              theme={theme}
-            />
-          </div>
-        );
-      })}
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', paddingRight: '1em' }}>
+      <div className="flex-1 flex justify-center">
+        {current.map((index, i) => {
+          const { icon: img, name, job, country, testimonial: description } = testimonials[index];
+          return (
+            <div key={i} className={`testimonial-card `}>
+              <TestimonialCard
+                img={img}
+                name={name}
+                job={job}
+                country={country}
+                description={description}
+                theme={theme}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex justify-end pr-2 md:pr-1">
         <button className={currentIndex === testimonials.length - 1 ? 'focus' : ''} onClick={handleNext}><MdArrowForwardIos fill={theme === 'dark' ? '#dbeafe' : '#94a3b8'} size="2em" /></button>
       </div>
     </div>

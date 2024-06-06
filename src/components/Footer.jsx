@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer className={`relative p-4 pt-16 md:mt-0 rounded-tl-3xl ${theme === 'light' ? 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary' : 'bg-primary text-secondary'} `}>
-      <div className={`absolute top-0 right-0 w-16 h-16 ${theme === 'light' ? 'bg-secondary' : 'bg-primary'} rounded-full`}></div>
+      
       <div className="container mx-auto flex flex-wrap justify-center">
         {/*name and logo */}
         <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0">
@@ -22,7 +22,6 @@ function Footer() {
         <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 mt-4 md:mt-0 font-agbalumo">
           <h3 className="text-lg ">Contacts</h3>
           <p className="mt-2">Email: nalediaccc@mail.com</p>
-          {/* <p>Phone: 123-456-7890</p> */}
           <p>Location: Cape Town, South Africa</p>
         </div>
 
@@ -54,7 +53,6 @@ function Footer() {
         <hr className={`hidden md:block border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} w-1/4 md:mx-2`} />
       </div>
 
-      {/* <hr className={`border-t ${theme === 'light' ? 'border-primary' : 'border-secondary'} mb-4 md:hidden`} /> */}
     </footer>
   );
 }

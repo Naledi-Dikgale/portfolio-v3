@@ -1,5 +1,13 @@
 export const projects = [
   {
+    image: '/brain.png',
+    title: 'Brain-Cardio',
+    description: 'A fun (Brain workout) mobile game played in teams to boost knowledge and break the ice.',
+    sourceCodeLink: 'https://github.com/Naledi-Dikgale/brain-cardio',
+    liveLink: 'https://brain-cardio-naledi.netlify.app/',
+    techStack: ['FaReact', 'SiTailwindcss']
+  },
+  {
     image: '/audio.png',
     title: 'Audio-Wise',
     description: 'An audiologist business website built with React and Tailwind.',
@@ -22,13 +30,5 @@ export const projects = [
     sourceCodeLink: 'https://github.com/Naledi-Dikgale/YouTube-dummy',
     liveLink: 'https://naledi-dikgale.github.io/YouTube-dummy/',
     techStack: ['FaHtml5', 'FaCss3']
-  },
-  {
-    image: '/brain.png',
-    title: 'Brain-Cardio',
-    description: 'A fun (Brain workout) mobile game played in teams to boost knowledge and break the ice.',
-    sourceCodeLink: 'https://github.com/user/console-hub',
-    liveLink: 'https://console-hub.com',
-    techStack: ['FaReact', 'SiTailwindcss']
   },
 ];

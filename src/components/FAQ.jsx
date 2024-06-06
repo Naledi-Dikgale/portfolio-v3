@@ -25,11 +25,11 @@ function FAQ() {
               onClick={() => toggleAccordion(index)}
               className={`flex justify-between w-full px-4 py-2 text-xl font-agbalumo border-2 rounded-full ${theme === 'light' ? ' border-secondary text-secondary hover:bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800 hover:text-primary' : 'bg-transparent text-primary hover:bg-gradient-to-r from-rose-500 via-pink-400 to-pink-800'} focus:outline-none`}
             >
-              <span className="text-lg font-andika font-medium">{faq.question}</span>
+              <span className="text-lg font-agbalumo font-medium">{faq.question}</span>
               <span>{isOpen[index] ? '-' : '+'}</span>
             </button>
             {isOpen[index] && (
-              <div className={`px-4 py-2 text-xl font-agbalumo ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-transparent text-primary'}`}>
+              <div className={`px-4 py-2 text-xl font-andika ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-transparent text-primary'}`}>
                 <p>{faq.answer}</p>
               </div>
             )}

@@ -58,7 +58,7 @@ function Testimonials() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   return (
-    <section className={`p-3 flex flex-col items-center justify-center h-full ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
+    <section className={`p-3 flex flex-col items-center justify-center md:h-screen  ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
       <div className="flex flex-col items-center justify-between">
         <div>
           <h1 className={`font-agbalumo font-bold text-4xl text-center mb-8 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
