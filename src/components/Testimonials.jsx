@@ -58,21 +58,12 @@ function Testimonials() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   return (
-    <section className={`p-3 flex flex-col items-center justify-center md:h-screen  ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
+    <section className={`p-3 flex flex-col items-center justify-center  ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
       <div className="flex flex-col items-center justify-between">
         <div>
           <h1 className={`font-agbalumo font-bold text-4xl text-center mb-8 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
             Testimonials
           </h1>
-      {/* {data.map((item, index) => (
-        <span key={index} className="text-center mt-4">
-          <div className="flex flex-col items-center pb-4">
-            <img src={item.icon} alt={item.name} className="w-12 h-12 rounded-full mx-auto"/>
-            <h2 className="font-agbalumo text-xl">{item.name}</h2>
-          </div>
-          <p className="font-lobster text-lg">{item.testimonial}</p>
-        </span>
-      ))} */}
 
       <TestimonialSlider testimonials={data} />
     </div>
