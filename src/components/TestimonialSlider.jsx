@@ -71,7 +71,7 @@ const TestimonialSlider = ({ testimonials }) => {
         <button className={currentIndex === testimonials.length - 1 ? 'focus' : ''} onClick={handleNext}><MdArrowForwardIos fill={theme === 'dark' ? '#dbeafe' : '#94a3b8'} size="2em" /></button>
       </div>
     </div>
-    <div className="pagination mt-4">
+    <div className="pagination mt-8">
       {testimonials.map((_, index) => (
         <div key={index} className={`dot ${index === currentIndex ? 'active' : ''}`} />
       ))}

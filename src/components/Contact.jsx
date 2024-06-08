@@ -7,7 +7,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="contact" className={`relative w-screen h-screen pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`} 
+    <div id="contact" className={`relative w-screen h-auto pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`} 
     style={{ backgroundImage: 'url(/contact.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col space-y-4 pl-4">
-          <p className="font-bold text-xl font-andika sm:w-full">I can't wait to hear you out! Whether it's about employment, a collaboration opportunity, or just a simple coffee chat, I'm excited to connect.</p>
+          <p className="font-bold text-xl font-andika sm:w-full">I can't wait to hear you out! Whether it's about employment, a collaboration opportunity, a bug in my code or just a simple coffee chat, I'm excited to connect.</p>
           <a href="mailto:nalediaccc@gmail.com" className="flex items-center space-x-2 hover:text-button font-agbalumo">
             <FaEnvelope size={24} />
           </a>

@@ -6,7 +6,7 @@ function Intro() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section className={`h-screen p-6 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
+    <section className={`h-auto pt-20 md:pt-4 p-6 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
       <div className="flex flex-row items-center justify-center mt-4 space-x-6">
         <div className="md:w-1/2 md:mt-0 mt-4 px-4 flex flex-col md:pl-8 ">
           <h1 className={`text-4xl font-agbalumo font-bold mb-4 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
