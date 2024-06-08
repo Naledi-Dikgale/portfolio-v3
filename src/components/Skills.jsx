@@ -70,8 +70,8 @@ function Skills() {
           </div>
         ))}
       </div>
-      <h2 className={`font-agbalumo font-bold text-xl text-center mt-12 p-6 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
-        My Commit History
+      <h2 className={`font-tang text-3xl font-bold text-center mt-12 p-6 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
+        How often I write code
       </h2>
       <GitHubCalendar 
         username="Naledi-Dikgale" 
