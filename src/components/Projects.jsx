@@ -28,13 +28,13 @@ function Projects() {
 
   return (
     <section className={`p-6 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
-      <h1 className={`font-agbalumo text-4xl text-center ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
+      <h1 className={`font-agbalumo text-4xl text-center pb-4 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         My work
       </h1>
       <div className="md:w-7/12 h-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, index) => (
           <div key={index} className="card bg-transparent shadow-md rounded-lg p-4 flex flex-col">
-            <img className="w-full h-[50%] object-cover rounded-t-lg" src={project.image} alt={project.title} />
+            <img className="w-full h-auto object-cover rounded-t-lg" src={project.image} alt={project.title} />
             <h2 className="text-xl font-agbalumo font-bold text-center mt-2">{project.title}</h2>
             <p className="text-gray-700 mt-2 text-center px-8 font-andika">{project.description}</p>
             <div className="mt-4 text-center flex flex-wrap justify-center">
