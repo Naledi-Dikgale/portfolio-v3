@@ -7,7 +7,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div id="contact" className={`relative w-screen h-auto pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`} 
+    <div id="contact" className={`relative w-screen md:h-screen h-auto pt-28 pb-28 flex flex-col justify-center items-center md:pt-4 bg-cover bg-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`} 
     style={{ backgroundImage: 'url(/contact.png)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
