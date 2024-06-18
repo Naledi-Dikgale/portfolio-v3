@@ -12,7 +12,7 @@ function Intro() {
           <h1 className={`text-4xl font-agbalumo font-bold mb-4 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
           <span className="text-button">Hello,</span> I'm Naledi
           </h1>
-          <p className={` font-andika text-xl mb-4 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
+          <p className={` font-andika text-xl mb-12 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
           Your one-stop destination for 
              turning ideas into pixel-perfect
               reality. I craft digital dreams with code! With a toolbox filled with React,
