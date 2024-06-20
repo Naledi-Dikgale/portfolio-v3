@@ -7,14 +7,14 @@ export const projects = [
     liveLink: 'https://brain-cardio-naledi.netlify.app/',
     techStack: ['FaReact', 'SiTailwindcss']
   },
-  {
-    image: '/audio.png',
-    title: 'Audio-Wise',
-    description: 'An audiologist business website built with React and Tailwind.',
-    sourceCodeLink: 'https://github.com/user/console-hub',
-    liveLink: 'https://console-hub.com',
-    techStack: ['FaReact', 'SiTailwindcss']
-  },
+  // {
+  //   image: '/audio.png',
+  //   title: 'Audio-Wise',
+  //   description: 'An audiologist business website built with React and Tailwind.',
+  //   sourceCodeLink: 'https://github.com/user/console-hub',
+  //   liveLink: 'https://console-hub.com',
+  //   techStack: ['FaReact', 'SiTailwindcss']
+  // },
   {
     image: '/console.png',
     title: 'Console Hub',
