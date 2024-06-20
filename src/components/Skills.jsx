@@ -56,8 +56,8 @@ function Skills() {
   };
 
   return (
-    <section className={`md:w-full h-auto p-6 flex flex-col items-center justify-center ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
-      <h1 className={`font-agbalumo font-bold text-4xl text-center mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
+    <section className={`md:w-full h-auto p-6 flex flex-col items-center justify-center pb-8 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
+      <h1 className={`font-agbalumo text-4xl text-center mb-12 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         Tools and Technologies
       </h1>
       <div className="md:w-[40%] h-auto grid grid-cols-3 md:grid-cols-4 gap-y-2 gap-x-2 md:gap-x-4 lg:gap-x-2 items-center justify-center">
