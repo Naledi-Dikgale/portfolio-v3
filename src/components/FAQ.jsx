@@ -15,8 +15,8 @@ function FAQ() {
 
   return (
     <div id="questions" className={` h-fit pb-16 pt-16 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
-      <h1 className={`font-agbalumo text-3xl font-bold mb-4 text-center underline-double ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
-        FAQ
+      <h1 className={`font-agbalumo text-3xl mb-4 text-center underline-double ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
+        FAQs
       </h1>
       <div className="w-full h-auto space-y-4 max-w-3xl mx-auto p-6">
         {FAQ_DATA.map((faq, index) => (
