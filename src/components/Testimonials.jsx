@@ -62,7 +62,7 @@ function Testimonials() {
       <div className="flex flex-col items-center justify-between">
         <div>
           <h1 className={`font-agbalumo text-4xl text-center mb-4 ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
-            What others say about me
+            What others say
           </h1>
 
       <TestimonialSlider testimonials={data} />
