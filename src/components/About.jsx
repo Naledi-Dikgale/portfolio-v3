@@ -18,16 +18,16 @@ function About() {
 
   return (
     <section id="about" className={`h-auto mx-auto pb-12 pt-24 px-12 ${theme === 'light' ? 'bg-primary text-secondary' : 'bg-gradient-to-r from-slate-800 via-slate-850 to-slate-900 text-primary'}`}>
-      <h1 className={`font-agbalumo text-3xl font-bold mb-4 text-center ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
+      <h1 className={`font-agbalumo text-3xl mb-4 text-center ${theme === 'light' ? 'text-secondary' : 'text-primary'}`}>
         About Me
       </h1>
       <div className="w-full h-auto space-y-4 max-w-3xl mx-auto">
         <p className={`text-center font-andika text-xl mb-4 ${theme === 'light' ? 'text-secondary' : 'text-secondary-light'}`}>
-          I love to design and code things from scratch.
-          I can help you build a product, feature or website.
-          Look through some of my work and experience!
-          If you like what you see and have a project you need coded,
-          don&apos;t hesitate to contact me.
+        I thrive on creating and coding innovative solutions from scratch. 
+        Whether it’s a product, feature, or entire website, I’ve got you covered. 
+        Dive into my portfolio to see my work in action. 
+        If you’re impressed and have a project in mind, let's bring it 
+        to life together—reach out and let’s get started!
         </p>
         <div className="border-t-2 border-b-2 border-gray-300 py-4">
           <h3 className="text-center font-bold">
