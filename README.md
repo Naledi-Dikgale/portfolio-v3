@@ -145,7 +145,7 @@ If you like this project please show support by staring ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-* [Microverse](https://www.microverse.org/) for providing me with the opportunity to learn and grow.
+* [Microverse](https://www.microverse.org/) for constant support and for providing me with the opportunity to learn and grow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
